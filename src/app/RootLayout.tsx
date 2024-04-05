@@ -1,5 +1,4 @@
 import MainLayout from "./components/layout/MainLayout";
-import { inter } from "./layout";
 
 
 export default function RootLayout({
@@ -9,8 +8,8 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={inter.className}>
-                <MainLayout children={children} />
+            <body>
+                <MainLayout>{children}</MainLayout>
             </body>
         </html>
     );
