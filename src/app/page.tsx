@@ -76,7 +76,6 @@ if(have_a_project) navigate ('/contact');
         <div className="w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
 
       </motion.div >
-      <div className="w-2 h-full bg-gradient-to-b from-secondary to-primary"></div>
 
     </div >
   );

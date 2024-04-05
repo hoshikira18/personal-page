@@ -1,13 +1,12 @@
 import Navigation from "./Navigation";
 import "@/app/globals.css"
-import SideBar from "./SideBar";
 interface MainLayoutProps {
     children: React.ReactNode;
 }
 
 const MainLayout = ({ children }: MainLayoutProps) => {
     return (
-        <div className="dark relative min-h-screen w-full px-8 flex justify-center bg-black ">
+        <div className=" relative min-h-screen w-full px-8 flex justify-center bg-black ">
             <div className="fixed z-50 top-0 left-0 w-full bg-black h-8"></div>
             <div className="fixed z-50 bottom-0 left-0 w-full bg-black h-8"></div>
 
@@ -18,8 +17,10 @@ const MainLayout = ({ children }: MainLayoutProps) => {
                     </div>
                 </main>
             </div>
-            <Navigation />
-            <div className="w-0.5 h-full bg-gradient-to-b from-secondary to-primary"></div>
+            <div className="flex">
+                <div className="w-1 h-full bg-gradient-to-b from-secondary to-primary"></div>
+                <Navigation />
+            </div>
         </div >
     )
 }
