@@ -1,0 +1,41 @@
+.ceiling-fan {
+  background-color: #fed32c;
+  height: 35px;
+  width: 35px;
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  transform-origin: center;
+  animation: spin 0.5s linear infinite;
+}
+
+.ceiling-fan::before,
+.ceiling-fan::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 50px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.ceiling-fan::before {
+  top: 36px;
+  border-radius: 50% 50% 50% 50% / 85% 85% 15% 15%;
+}
+
+.ceiling-fan::after {
+  top: -52px;
+  border-radius: 50% 50% 50% 50% / 15% 15% 85% 85%;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
