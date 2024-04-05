@@ -3,10 +3,25 @@ import avatar from "../../../../public/static/home/khuyen-avt-2.png"
 import { motion } from "framer-motion"
 import Button from "../Button"
 import Image from "next/image"
+import Fan from "../home/Fan"
 
 const SideBar = () => {
+    const draw = {
+        hidden: { pathLength: 0, opacity: 0 },
+        visible: (i: any) => {
+            const delay = 1 + i * 0.5;
+            return {
+                pathLength: 1,
+                opacity: 1,
+                transition: {
+                    pathLength: { delay, type: "spring", duration: 1.5, bounce: 0 },
+                    opacity: { delay, duration: 0.01 }
+                }
+            };
+        }
+    };
     return (
-        <div className="z-45 sticky top-0 flex flex-col justify-between h-screen py-20 min-h-screen min-w-[400px] w-1/3 bg-gradient-to-r from-[#18181b] to-[#222225] ">
+        <div className="z-45 sticky top-0 flex flex-col  h-screen py-20 min-h-screen min-w-[400px] w-1/3 bg-gradient-to-r from-[#18181b] to-[#222225] ">
             <div className="px-20">
                 <motion.div
                     className="box"
@@ -36,6 +51,7 @@ const SideBar = () => {
                 </motion.div>
             </div>
 
+
             <motion.div
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -44,18 +60,7 @@ const SideBar = () => {
                     delay: 0,
                     ease: [0, 0.71, 0.2, 1.01]
                 }}
-                className="px-20">
-                <Button href="https://www.facebook.com/hoshikira18" newTab="1">Download Resume</Button>
-            </motion.div>
-            <motion.div
-                initial={{ opacity: 0, scale: 0.5 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{
-                    duration: 0.8,
-                    delay: 0,
-                    ease: [0, 0.71, 0.2, 1.01]
-                }}
-                className="px-20 mb-10">
+                className="px-20 pt-10 pb-20">
                 <Button href="https://www.facebook.com/hoshikira18" newTab="1">Download Resume</Button>
             </motion.div>
         </div>
