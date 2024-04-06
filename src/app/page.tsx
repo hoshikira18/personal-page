@@ -1,10 +1,10 @@
 "use client"
-import { motion } from "framer-motion"
 import Typewriter from 'typewriter-effect';
 import { CodeBlock } from 'react-code-block';
 import { themes } from 'prism-react-renderer';
 import SideBar from "./components/layout/SideBar";
 import Button from "./components/Button";
+import Pan from "./components/animation/Pan";
 
 const Home = () => {
 
@@ -17,21 +17,12 @@ const services = [
 
 if(have_a_project) navigate ('/contact');
     `
-
   return (
     <div
       className="h-[1000px] w-full flex">
       <SideBar />
       {/* <div className="w-2 h-full bg-gradient-to-b from-secondary to-primary"></div> */}
-      <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{
-          duration: 0.8,
-          delay: 0,
-          ease: [0, 0.71, 0.2, 1.01]
-        }}
-        className="p-20 flex flex-col space-y-5">
+      <Pan className="p-20 flex flex-col space-y-5">
         <div className='flex items-center space-x-2 text-5xl text-gray-300 font-bold'>
           <span className='text-gray-500'>&gt;</span>
           <Typewriter
@@ -57,26 +48,26 @@ if(have_a_project) navigate ('/contact');
           <Button href="/contact">Get in touch</Button>
         </div>
 
-        <div className="w-full h-1 bg-gradient-to-r from-secondary to-primary" ></div >
-        <div className="flex p-3 space-x-20">
-          <div className="flex flex-col items-end space-y-5">
-            <div className="flex items-center space-x-2">
-              <span className="text-5xl font-bold text-gray-300">1+</span>
-              <span className="text-secondary">Year of experience</span>
-            </div>
+        <div className="space-y-3">
+          <div className="w-full h-1 bg-gradient-to-r from-secondary to-primary" ></div >
+          <div className="flex p-3 space-x-20">
+            <div className="flex flex-col items-end space-y-5">
+              <div className="flex items-center space-x-2">
+                <span className="text-5xl font-bold text-gray-300">1+</span>
+                <span className="text-secondary">Year of experience</span>
+              </div>
 
-          </div>
-          <div className="flex flex-col items-end space-y-5">
-            <div className="flex items-center space-x-2">
-              <span className="text-5xl font-bold text-gray-300">10+</span>
-              <span className="text-secondary">Completed projects</span>
+            </div>
+            <div className="flex flex-col items-end space-y-5">
+              <div className="flex items-center space-x-2">
+                <span className="text-5xl font-bold text-gray-300">10+</span>
+                <span className="text-secondary">Completed projects</span>
+              </div>
             </div>
           </div>
+          <div className="w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
         </div>
-        <div className="w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
-
-      </motion.div >
-
+      </Pan>
     </div >
   );
 }
