@@ -36,7 +36,7 @@ if(have_a_project) navigate ('/contact');
           />
         </div>
         <div className='py-3 text-5xl font-bold bg-gradient-to-r from-primary via-green-300 to-secondary text-transparent bg-clip-text'>Frontend Developer <span className='text-gray-400'>&</span> IT Enthusiast</div>
-        <p className='text-gray-300 text-lg pr-10 text-start'>Hi there, I&apos;m a frontend web developer with more one year experience in coding and frontend development. I&apos;m passionate about creating innovative solutions. With my creativity, technical skills, and attention to detail, I&apos;m confident I can help you find the best solutions for your needs.</p>
+        <p className='text-gray-300 text-lg pr-10 text-start'>Hi there, I&apos;m a frontend web developer with more than one year experience in coding and frontend development. I&apos;m passionate about creating innovative solutions. With my creativity, technical skills, and attention to detail, I&apos;m confident I can help you find the best solutions for your needs.</p>
         <CodeBlock code={code} language={"javascript"} theme={themes.nightOwl}>
           <CodeBlock.Code className="bg-gray-900 p-6 rounded-xl shadow-lg">
             <CodeBlock.LineContent>
@@ -45,7 +45,7 @@ if(have_a_project) navigate ('/contact');
           </CodeBlock.Code>
         </CodeBlock>
         <div className="px-5 py-3">
-          <Button href="/contact">Get in touch</Button>
+          <Button href="/contact">Navigate to Contact</Button>
         </div>
 
         <div className="space-y-3">
