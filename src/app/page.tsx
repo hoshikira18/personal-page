@@ -1,49 +1,35 @@
-"use client"
-import Typewriter from 'typewriter-effect';
-import { CodeBlock } from 'react-code-block';
-import { themes } from 'prism-react-renderer';
+// "use client"
 import SideBar from "./components/layout/SideBar";
 import Button from "./components/Button";
 import Pan from "./components/animation/Pan";
 
+import type { Metadata } from 'next'
+import BlockCode from './components/home/BlockCode';
+import Writer from "./components/home/Writer";
+
+export const metadata: Metadata = {
+  title: 'Hoshikira | Frontend Developer',
+  icons: {
+    icon: '/favicon.png',
+  }
+}
+
 const Home = () => {
 
-  const code = `
-console.log("Hello");
-
-const services = [
-  'Frontend Web',
-]
-
-if(have_a_project) navigate ('/contact');
-    `
   return (
     <div
-      className="h-[1000px] w-full flex">
+      className=" w-full flex">
       <SideBar />
       {/* <div className="w-2 h-full bg-gradient-to-b from-secondary to-primary"></div> */}
       <Pan className="p-20 flex flex-col space-y-5">
-        <div className='flex items-center space-x-2 text-5xl text-gray-300 font-bold'>
-          <span className='text-gray-500'>&gt;</span>
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter.typeString('Hoshikira')
-                .start();
-            }}
-            options={{
-              cursor: "_"
-            }}
-          />
-        </div>
+        <Writer />
         <div className='py-3 text-5xl font-bold bg-gradient-to-r from-primary via-green-300 to-secondary text-transparent bg-clip-text'>Frontend Developer <span className='text-gray-400'>&</span> IT Enthusiast</div>
         <p className='text-gray-300 text-lg pr-10 text-start'>Hi there, I&apos;m a frontend web developer with more than one year experience in coding and frontend development. I&apos;m passionate about creating innovative solutions. With my creativity, technical skills, and attention to detail, I&apos;m confident I can help you find the best solutions for your needs.</p>
-        <CodeBlock code={code} language={"javascript"} theme={themes.nightOwl}>
-          <CodeBlock.Code className="bg-gray-900 p-6 rounded-xl shadow-lg">
-            <CodeBlock.LineContent>
-              <CodeBlock.Token />
-            </CodeBlock.LineContent>
-          </CodeBlock.Code>
-        </CodeBlock>
+
+
+        <BlockCode />
+
+
         <div className="px-5 py-3">
           <Button href="/contact">Navigate to Contact</Button>
         </div>

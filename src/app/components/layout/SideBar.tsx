@@ -1,4 +1,3 @@
-// import avatar from "../../../../public/static/home/khuyen-avt.jpg"
 import avatar from "../../../../public/static/home/khuyen-avt-2.png"
 import Button from "../Button"
 import Image from "next/image"
@@ -16,10 +15,7 @@ const SideBar = () => {
                     </div>
                 </FadeIn>
 
-                <Pan
-                // initial={{ opacity: 0.5, x: -50 }}
-                // animate={{ opacity: 1, x: 0 }}
-                >
+                <Pan>
                     <h1 className="py-3 mx-auto text-4xl font-medium text-center text-secondary">Hoshikira<span className="text-primary">.dev</span></h1>
                     <div className="w-4/5 mx-auto h-1 bg-gradient-to-r from-secondary to-primary"></div>
                     <div className="w-full text-center text-base py-2 text-gray-300">Made with <span className="text-primary underline">Coffee</span> & <a href="https://www.facebook.com/ptkl2053" target="_blank" className="text-secondary underline">@ptkl2053</a></div>
