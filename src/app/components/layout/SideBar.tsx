@@ -9,8 +9,14 @@ const SideBar = () => {
     return (
         <div className="z-45 sticky top-0 flex flex-col  h-screen py-20 min-h-screen min-w-[400px] w-1/3 bg-gradient-to-r from-[#18181b] to-[#222225] ">
             <div className="px-20">
-                <FadeIn>
+                {/* <FadeIn>
                     <div className="w-4/5 mx-auto rounded-full overflow-hidden border-4 border-gray-300 bg-gradient-to-tr from-gray-800 via-yellow-800 to-secondary">
+                        <Image src={avatar} width={500} height={500} alt="my-photo" className="md:transform-gpu md:transition-all md:duration-700"></Image>
+                    </div>
+                </FadeIn> */}
+
+                <FadeIn>
+                    <div className="w-4/5 mx-auto overflow-hidden border-b-4 border-primary ">
                         <Image src={avatar} width={500} height={500} alt="my-photo" className="md:transform-gpu md:transition-all md:duration-700"></Image>
                     </div>
                 </FadeIn>

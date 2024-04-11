@@ -1,11 +1,10 @@
-// "use client"
 import SideBar from "./components/layout/SideBar";
-import Button from "./components/Button";
 import Pan from "./components/animation/Pan";
-
 import type { Metadata } from 'next'
 import BlockCode from './components/home/BlockCode';
 import Writer from "./components/home/Writer";
+import MyStories from "./components/home/MyStories";
+import Button from "./components/Button";
 
 export const metadata: Metadata = {
   title: 'Hoshikira | Frontend Developer',
@@ -22,21 +21,24 @@ const Home = () => {
       <SideBar />
       {/* <div className="w-2 h-full bg-gradient-to-b from-secondary to-primary"></div> */}
       <Pan className="p-20 flex flex-col space-y-5">
-        <Writer />
-        <div className='py-3 text-5xl font-bold bg-gradient-to-r from-primary via-green-300 to-secondary text-transparent bg-clip-text'>Frontend Developer <span className='text-gray-400'>&</span> IT Enthusiast</div>
+
+        <MyStories />
+
+        {/* <Writer />
+        <div className='py-3 text-5xl font-bold bg-gradient-to-r from-secondary  to-primary text-transparent bg-clip-text'>Frontend Developer <span className='text-gray-400'>&</span> IT Enthusiast</div> */}
         <p className='text-gray-300 text-lg pr-10 text-start'>Hi there, I&apos;m a frontend web developer with more than one year experience in coding and frontend development. I&apos;m passionate about creating innovative solutions. With my creativity, technical skills, and attention to detail, I&apos;m confident I can help you find the best solutions for your needs.</p>
 
 
         <BlockCode />
 
 
-        <div className="px-5 py-3">
+        {/* <div className="px-5 py-3">
           <Button href="/contact">Navigate to Contact</Button>
-        </div>
+        </div> */}
 
         <div className="space-y-3">
           <div className="w-full h-1 bg-gradient-to-r from-secondary to-primary" ></div >
-          <div className="flex p-3 space-x-20">
+          <div className="flex p-3 space-x-20 items-center">
             <div className="flex flex-col items-end space-y-5">
               <div className="flex items-center space-x-2">
                 <span className="text-5xl font-bold text-gray-300">1+</span>
@@ -50,10 +52,13 @@ const Home = () => {
                 <span className="text-secondary">Completed projects</span>
               </div>
             </div>
+            <Button href="/contact">Contact</Button>
+
           </div>
-          <div className="w-full h-1 bg-gradient-to-r from-secondary to-primary"></div>
         </div>
+
       </Pan>
+
     </div >
   );
 }
