@@ -13,11 +13,7 @@ const MainLayout = ({ children }: MainLayoutProps) => {
         <>
 
             <Head>
-                {/* <title>
-                    {title ? `${title} | ${siteName}` : `${siteName}`}
-                </title> */}
-                {/* <meta name="description" content={description} /> */}
-                <link rel="icon" href="/favicon.png" />
+                <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className=" relative min-h-screen w-full px-8 flex justify-center bg-black ">
                 <div className="fixed z-50 top-0 left-0 w-full bg-black h-8"></div>
