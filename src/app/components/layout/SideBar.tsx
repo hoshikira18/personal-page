@@ -31,7 +31,7 @@ const SideBar = () => {
                 </Pan>
             </div>
 
-            <Button href="https://www.facebook.com/hoshikira18" newTab="1" className="px-20 pt-10 pb-20">Download Resume</Button>
+            <Button href="https://drive.google.com/file/d/1zHGC6OtA0QkFhxqhSTYJ4E0CgXJCPsBY/view?usp=sharing" newTab="1" className="px-20 pt-10 pb-20">Download Resume</Button>
         </div>
     )
 }
