@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div
-      className=" w-full flex">
+      className="flex flex-col lg:flex-row w-full">
       <SideBar />
       {/* <div className="w-2 h-full bg-gradient-to-b from-secondary to-primary"></div> */}
       <Pan className="p-20 flex flex-col space-y-5">
@@ -28,9 +28,7 @@ const Home = () => {
         <div className='py-3 text-5xl font-bold bg-gradient-to-r from-secondary  to-primary text-transparent bg-clip-text'>Frontend Developer <span className='text-gray-400'>&</span> IT Enthusiast</div> */}
         <p className='text-gray-300 text-lg pr-10 text-start'>Hi there, I&apos;m a web developer with experience in coding and frontend development. I&apos;m passionate about creating innovative solutions. With my creativity, technical skills, and attention to detail, I&apos;m confident I can help you find the best solutions for your needs.</p>
 
-
         <BlockCode />
-
 
         {/* <div className="px-5 py-3">
           <Button href="/contact">Navigate to Contact</Button>
@@ -52,9 +50,12 @@ const Home = () => {
                 <span className="text-secondary">Completed projects</span>
               </div>
             </div>
-            <Button href="/contact">Contact</Button>
 
           </div>
+          <div className="p-5">
+            <Button href="/contact">Contact</Button>
+          </div>
+
         </div>
 
       </Pan>

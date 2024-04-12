@@ -33,12 +33,10 @@ const MyStories = () => {
                 {
                     data.map(e => {
                         return (
-                            <div className={`${show === e.id ? "w-full" : "w-[200px]"} ease-out duration-300 bg-gray-300 p-1 rounded-md overflow hover:-translate-y-2`} key={e.id} onMouseOver={() => {
+                            <div className={`${show === e.id ? "w-full" : "w-[200px]"} ease-out duration-300 bg-gray-300 p-1 rounded-sm overflow hover:-translate-y-2`} key={e.id} onMouseOver={() => {
                                 setShow(e.id)
                             }}>
-
                                 <StoryCard image={e.image} title={e.title} isOpen={e.id == show ? true : false} />
-
                             </div>
                         )
                     })
