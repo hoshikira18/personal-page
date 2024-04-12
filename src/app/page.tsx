@@ -28,26 +28,26 @@ const Home = () => {
         <div className='py-3 text-5xl font-bold bg-gradient-to-r from-secondary  to-primary text-transparent bg-clip-text'>Frontend Developer <span className='text-gray-400'>&</span> IT Enthusiast</div> */}
         <p className='text-gray-300 text-lg lg:pr-10 text-start'>Hi there, I&apos;m a web developer with experience in coding and frontend development. I&apos;m passionate about creating innovative solutions. With my creativity, technical skills, and attention to detail, I&apos;m confident I can help you find the best solutions for your needs.</p>
 
-        {/* <BlockCode /> */}
+        <BlockCode />
 
         {/* <div className="px-5 py-3">
           <Button href="/contact">Navigate to Contact</Button>
         </div> */}
 
-        {/* <div className="space-y-3 bg-gradient-to-b from-[#212121] to-[#1a1a1d]">
+        <div className="space-y-3 bg-gradient-to-b from-[#212121] to-[#1a1a1d]">
           <div className="w-full h-1 bg-gradient-to-r from-secondary to-primary" ></div >
-          <div className="flex p-3 space-x-20 items-center">
+          <div className="flex p-3 md:space-x-20 space-x-10 items-center">
             <div className="flex flex-col items-end space-y-5">
               <div className="flex items-center space-x-2">
-                <span className="text-5xl font-bold text-gray-300">0</span>
-                <span className="text-secondary">Year of experience</span>
+                <span className="md:text-5xl text-3xl font-bold text-gray-300">0</span>
+                <span className="text-secondary md:text-lg text-base">Year of experience</span>
               </div>
 
             </div>
             <div className="flex flex-col items-end space-y-5">
               <div className="flex items-center space-x-2">
-                <span className="text-5xl font-bold text-gray-300">5+</span>
-                <span className="text-secondary">Completed projects</span>
+                <span className="md:text-5xl text-3xl font-bold text-gray-300">5+</span>
+                <span className="text-secondary md:text-lg text-base">Completed projects</span>
               </div>
             </div>
 
@@ -56,7 +56,7 @@ const Home = () => {
             <Button href="/contact">Contact</Button>
           </div>
 
-        </div> */}
+        </div>
 
       </Pan>
 

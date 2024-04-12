@@ -7,14 +7,15 @@ const BlockCode = () => {
     const code = `
   console.log("Hello");
   
-  const services = [
-    'Frontend Web',
-  ]
+const services = [
+   'Frontend Web',
+]
   
-  if(have_a_project) navigate ('/contact');
+if(have_a_project) 
+    navigate ('/contact');
       `
     return (
-        <div>
+        <div className='w-full'>
             <CodeBlock code={code} language={"javascript"} theme={themes.oceanicNext} lines={[4]}>
                 <CodeBlock.Code className="bg-[#1f1f22] p-6 shadow-lg">
                     {({ isLineHighlighted }) => (
