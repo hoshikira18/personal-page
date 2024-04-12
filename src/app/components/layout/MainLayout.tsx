@@ -5,16 +5,12 @@ interface MainLayoutProps {
     children: React.ReactNode;
 }
 
-
-
-
 const MainLayout = ({ children }: MainLayoutProps) => {
     return (
         <>
+            {/* <Head>
 
-            <Head>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+            </Head> */}
             <div className=" relative min-h-screen w-full px-8 flex justify-center bg-black ">
                 <div className="fixed z-50 top-0 left-0 w-full bg-black h-8"></div>
                 <div className="fixed z-50 bottom-0 left-0 w-full bg-black h-8"></div>
