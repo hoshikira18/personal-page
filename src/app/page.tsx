@@ -26,7 +26,7 @@ const Home = () => {
 
         {/* <Writer />
         <div className='py-3 text-5xl font-bold bg-gradient-to-r from-secondary  to-primary text-transparent bg-clip-text'>Frontend Developer <span className='text-gray-400'>&</span> IT Enthusiast</div> */}
-        <p className='text-gray-300 text-lg pr-10 text-start'>Hi there, I&apos;m a frontend web developer with more than one year experience in coding and frontend development. I&apos;m passionate about creating innovative solutions. With my creativity, technical skills, and attention to detail, I&apos;m confident I can help you find the best solutions for your needs.</p>
+        <p className='text-gray-300 text-lg pr-10 text-start'>Hi there, I&apos;m a web developer with experience in coding and frontend development. I&apos;m passionate about creating innovative solutions. With my creativity, technical skills, and attention to detail, I&apos;m confident I can help you find the best solutions for your needs.</p>
 
 
         <BlockCode />
@@ -36,19 +36,19 @@ const Home = () => {
           <Button href="/contact">Navigate to Contact</Button>
         </div> */}
 
-        <div className="space-y-3">
+        <div className="space-y-3 bg-gradient-to-b from-[#212121] to-[#1a1a1d]">
           <div className="w-full h-1 bg-gradient-to-r from-secondary to-primary" ></div >
           <div className="flex p-3 space-x-20 items-center">
             <div className="flex flex-col items-end space-y-5">
               <div className="flex items-center space-x-2">
-                <span className="text-5xl font-bold text-gray-300">1+</span>
+                <span className="text-5xl font-bold text-gray-300">0</span>
                 <span className="text-secondary">Year of experience</span>
               </div>
 
             </div>
             <div className="flex flex-col items-end space-y-5">
               <div className="flex items-center space-x-2">
-                <span className="text-5xl font-bold text-gray-300">10+</span>
+                <span className="text-5xl font-bold text-gray-300">5+</span>
                 <span className="text-secondary">Completed projects</span>
               </div>
             </div>
