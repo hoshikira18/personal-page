@@ -7,7 +7,7 @@ import FadeIn from "../animation/Fadein"
 const SideBar = () => {
 
     return (
-        <div className="hidden z-45 lg:sticky top-0 md:flex flex-col items-center justify-center h-full lg:h-screen lg:py-20 pt-10 lg:min-h-screen lg:w-1/3 lg:bg-gradient-to-r from-[#18181b] to-[#222225] ">
+        <div className="z-45 lg:sticky top-0 flex flex-col items-center justify-center h-full lg:h-screen lg:py-20 pt-10 lg:min-h-screen lg:w-1/3 lg:bg-gradient-to-r from-[#18181b] to-[#222225] ">
             <div className="xl:px-20 lg:px-10 px-10">
                 {/* <FadeIn>
                     <div className="w-4/5 mx-auto rounded-full overflow-hidden border-4 border-gray-300 bg-gradient-to-tr from-gray-800 via-yellow-800 to-secondary">

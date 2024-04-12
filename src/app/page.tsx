@@ -20,21 +20,21 @@ const Home = () => {
       className="flex flex-col lg:flex-row w-full">
       <SideBar />
       {/* <div className="w-2 h-full bg-gradient-to-b from-secondary to-primary"></div> */}
-      <Pan className="p-20 flex flex-col space-y-5">
+      <Pan className="lg:p-20 md:p-10 p-5 flex flex-col space-y-5">
 
         <MyStories />
 
         {/* <Writer />
         <div className='py-3 text-5xl font-bold bg-gradient-to-r from-secondary  to-primary text-transparent bg-clip-text'>Frontend Developer <span className='text-gray-400'>&</span> IT Enthusiast</div> */}
-        <p className='text-gray-300 text-lg pr-10 text-start'>Hi there, I&apos;m a web developer with experience in coding and frontend development. I&apos;m passionate about creating innovative solutions. With my creativity, technical skills, and attention to detail, I&apos;m confident I can help you find the best solutions for your needs.</p>
+        <p className='text-gray-300 text-lg lg:pr-10 text-start'>Hi there, I&apos;m a web developer with experience in coding and frontend development. I&apos;m passionate about creating innovative solutions. With my creativity, technical skills, and attention to detail, I&apos;m confident I can help you find the best solutions for your needs.</p>
 
-        <BlockCode />
+        {/* <BlockCode /> */}
 
         {/* <div className="px-5 py-3">
           <Button href="/contact">Navigate to Contact</Button>
         </div> */}
 
-        <div className="space-y-3 bg-gradient-to-b from-[#212121] to-[#1a1a1d]">
+        {/* <div className="space-y-3 bg-gradient-to-b from-[#212121] to-[#1a1a1d]">
           <div className="w-full h-1 bg-gradient-to-r from-secondary to-primary" ></div >
           <div className="flex p-3 space-x-20 items-center">
             <div className="flex flex-col items-end space-y-5">
@@ -56,7 +56,7 @@ const Home = () => {
             <Button href="/contact">Contact</Button>
           </div>
 
-        </div>
+        </div> */}
 
       </Pan>
 

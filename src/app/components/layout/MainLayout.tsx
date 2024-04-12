@@ -17,12 +17,16 @@ const MainLayout = ({ children }: MainLayoutProps) => {
 
                 <div className="relative w-full max-w-screen-xl ">
                     <main className="relative h-full bg- bg-gradient-to-tr from-[#18181b] to-[#222225] rounded">
-                        <div className="h-full flex flex-col items-center ">
+                        <div className="h-full flex flex-col items-center pb-20 md:pb-0">
                             {children}
                         </div>
                     </main>
+                    <div className="md:hidden">
+                        <Navigation />
+                    </div>
+
                 </div>
-                <div className="flex">
+                <div className="md:flex hidden">
                     <div className="w-1 h-full bg-gradient-to-b from-secondary to-primary"></div>
                     <Navigation />
                 </div>
