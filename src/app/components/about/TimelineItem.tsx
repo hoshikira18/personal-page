@@ -8,7 +8,7 @@ interface Props {
 
 const TimelineItem = ({ title, time, des }: Props) => {
     return (
-        <div className='relative w-full  flex flex-col px-5 pb-20'>
+        <div className='relative w-full flex flex-col pl-5 pb-20'>
             <div className='absolute top-0 left-0 -translate-x-1/2 w-1 h-full bg-white'></div>
             <div className='absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-gradient-to-tr from-primary to-secondary'></div>
             <div className='px-3 -translate-y-3 space-y-2'>

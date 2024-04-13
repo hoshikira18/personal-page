@@ -13,7 +13,7 @@ interface Props {
 
 const TimelineCard = ({ data, title }: Props) => {
     return (
-        <div className='flex flex-col lg:px-10'>
+        <div className='flex flex-col lg:px-10 '>
             <div className='py-10'>
                 <h2 className='py-2 text-gray-300 font-bold text-2xl border-b-4 border-primary'>{title}</h2>
             </div>

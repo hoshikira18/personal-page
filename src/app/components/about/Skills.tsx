@@ -4,7 +4,7 @@ import Pan from '../animation/Pan'
 
 const Skills = () => {
     return (
-        <Pan className='w-full py-5 md:px-12 px-5 bg-gradient from-[#18181b] to-[#212121] shadow-lg border-t border-gray-300 flex flex-col space-y-3'>
+        <Pan className='w-full py-5 md:px-12 px-5 bg-gradient from-[#18181b] to-[#212121] shadow-lg border-t border-gray-300 flex flex-col space-y-5'>
             <div className='border-l-2 border-primary px-3 text-gray-300 front-medium text-lg'>
                 Front-End Development
             </div>

@@ -18,7 +18,7 @@ const Home = () => {
       className={`flex flex-col lg:flex-row w-full`}>
 
       <SideBar />
-      <Pan className="lg:p-20 md:p-10 p-5 flex flex-col space-y-5">
+      <Pan className="lg:px-20 lg:py-10 md:p-10 p-5 flex flex-col space-y-5">
         <MyStories />
         <p className='text-gray-300 text-lg lg:pr-10 text-start'>Hi there, I&apos;m a web developer with experience in coding and frontend development. I&apos;m passionate about creating innovative solutions. With my creativity, technical skills, and attention to detail, I&apos;m confident I can help you find the best solutions for your needs.</p>
         <BlockCode />
