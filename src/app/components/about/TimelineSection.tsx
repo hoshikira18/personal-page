@@ -36,7 +36,7 @@ const projects = [
 
 const TimelineSection = () => {
     return (
-        <Pan className="w-full p-20 flex md:flex-row flex-col md:space-x-10">
+        <Pan className="w-full lg:p-20 p-10 flex md:flex-row flex-col md:space-x-10">
             <div className="md:w-1/2 w-full grid grid-cols-1">
                 <TimelineCard data={education} title="Education" />
                 <TimelineCard data={activities} title="Activities" />
