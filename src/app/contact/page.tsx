@@ -9,7 +9,8 @@ export const metadata: Metadata = {
 
 const Contact = () => {
     return (
-        <div>Contact page</div>
+        <div className='h-screen w-full'>
+        </div>
     )
 }
 

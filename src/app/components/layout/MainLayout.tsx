@@ -21,12 +21,8 @@ const MainLayout = ({ children }: MainLayoutProps) => {
                             {children}
                         </div>
                     </main>
-                    <div className="md:hidden">
-                        <Navigation />
-                    </div>
-
                 </div>
-                <div className="md:flex hidden">
+                <div className="md:flex flex-col md:flex-row fixed md:relative bottom-0 left-0">
                     <div className="w-1 h-full bg-gradient-to-b from-secondary to-primary"></div>
                     <Navigation />
                 </div>

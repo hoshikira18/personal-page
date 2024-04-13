@@ -10,7 +10,7 @@ const Navigation = () => {
     const pathname = usePathname();
 
     return (
-        <div className="z-50 md:sticky fixed w-full md:top-0 bottom-0 flex justify-between md:h-screen md:min-h-screen md:w-16 md:py-20">
+        <div className="transition-all duration-300 z-50 md:sticky fixed w-full md:top-0 bottom-0 flex justify-between md:h-screen md:min-h-screen md:w-16 md:py-20">
 
             <div className="flex flex-col w-full justify-between h-full bg-gradient-to-r from-[#18181b] to-[#222225]">
                 <div className="sticky top-8 left-0 bg-[#222225] flex md:flex-col justify-center w-screen md:w-auto">
@@ -43,7 +43,7 @@ const Navigation = () => {
                     <Link href="/contact" onClick={() => { setPage("contact") }} className={`${pathname == "/contact" ? "bg-gradient-to-tr from-primary to-secondary" : "hover:bg-green-900"} w-1/4 md:w-auto transition-all flex flex-col items-center group overflow-hidden`}>
                         <div className={`${pathname == "/contact" ? "" : "absolute z-50 right-full px-5 h-16 bg-green-600 invisible opacity-0 transition-all duration-200 translate-x-8 group-hover:-translate-x-1 group-hover:visible group-hover:opacity-100 flex items-center justify-center"}`}><span className={`${pathname == "/contact" ? "hidden" : "hidden group-hover:block text-gray-300 text-base"}`}>Contact</span></div>
 
-                        <svg className="w-full md:h-16 h-12 md:p-4 p-2 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <svg className="w-full md:h-16 h-12 md:p-4 p-2 text-gray-800 dark:text-white transition-all" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke={`${pathname === "/contact" ? "#000" : "#ccc"}`} stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 16v-5.5A3.5 3.5 0 0 0 7.5 7m3.5 9H4v-5.5A3.5 3.5 0 0 1 7.5 7m3.5 9v4M7.5 7H14m0 0V4h2.5M14 7v3m-3.5 6H20v-6a3 3 0 0 0-3-3m-2 9v4m-8-6.5h1" />
                         </svg>
                         <span className={`${pathname == "/contact" ? "text-black" : "text-gray-300"} text-sm -translate-y-2 md:hidden`}>Contact</span>

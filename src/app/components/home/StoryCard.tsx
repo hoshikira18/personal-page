@@ -11,7 +11,7 @@ const StoryCard = ({ image, isOpen, title, className }: CardProps) => {
             <div className={`${isOpen ? "opacity-20" : "opacity-40"}  absolute rounded-sm bg-black top-0 bottom-0 left-0 right-0  ease-out duration-500 cursor-pointer`}></div>
 
             <div className={`${className} h-[300px] cursor-pointer`}>
-                <img src={image} alt="card" className="rounded-md w-full h-full object-cover shadow-lg" />
+                <img src={image} alt="card" className="rounded-sm w-full h-full object-cover shadow-lg" />
             </div>
 
 

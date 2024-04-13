@@ -15,7 +15,7 @@ const About = () => {
     return (
         <div className='flex flex-col md:flex-row w-full'>
             <div className='relative h-screen md:w-1/2 w-full overflow-hidden '>
-                <img src="/static/about/my-image.jpg" alt="my-image" className='h-full object-cover fade-out' />
+                <img src="/static/about/my-image.webp" alt="my-image" className='h-full object-cover fade-out' />
                 <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-transparent via-transparent to-black/90"></div>
                 <div className="absolute bottom-20 left-0 right-0 ">
                     <h1 className="md:text-5xl text-3xl text-center font-bold py-10 px-10 text-white">Ready to discuss your project?</h1>
