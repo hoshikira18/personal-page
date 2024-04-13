@@ -1,33 +1,36 @@
-import Head from "next/head";
+"use client"
 import Navigation from "./Navigation";
 import "@/app/globals.css"
+import { useEffect, useState } from "react";
+import "@/app/styles/animation/fadeout.css"
+import { motion, useMotionValue, useSpring } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion'
+import { usePathname, useRouter } from "next/navigation";
 interface MainLayoutProps {
     children: React.ReactNode;
 }
 
 const MainLayout = ({ children }: MainLayoutProps) => {
+
+    const path = usePathname();
     return (
-        <>
-            {/* <Head>
+        <div className="relative min-h-screen w-full lg:px-8 md:px-0 flex justify-center bg-black ">
 
-            </Head> */}
-            <div className=" relative min-h-screen w-full lg:px-8 md:px-0 flex justify-center bg-black ">
-                <div className="fixed z-50 top-0 left-0 w-full bg-black h-8 hidden lg:block"></div>
-                <div className="fixed z-50 bottom-0 left-0 w-full bg-black h-8 hidden lg:block"></div>
+            <div className="fixed z-50 top-0 left-0 w-full bg-black h-8 hidden lg:block"></div>
+            <div className="fixed z-50 bottom-0 left-0 w-full bg-black h-8 hidden lg:block"></div>
 
-                <div className="relative w-full max-w-screen-xl ">
-                    <main className="relative h-full bg- bg-gradient-to-tr from-[#18181b] to-[#222225] rounded">
-                        <div className="h-full flex flex-col items-center pb-20 md:pb-0">
-                            {children}
-                        </div>
-                    </main>
-                </div>
-                <div className="md:flex flex-col md:flex-row fixed md:relative bottom-0 left-0">
-                    <div className="w-1 h-full bg-gradient-to-b from-secondary to-primary"></div>
-                    <Navigation />
-                </div>
-            </div >
-        </>
+            <div className="relative w-full max-w-screen-xl ">
+                <main className="relative h-full bg- bg-gradient-to-tr from-[#18181b] to-[#222225] rounded">
+                    <div className={`h-full flex flex-col items-center pb-20 md:pb-0`}>
+                        {children}
+                    </div>
+                </main>
+            </div>
+            <div className="md:flex flex-col md:flex-row fixed md:relative bottom-0 left-0">
+                <div className="w-1 h-full bg-gradient-to-b from-secondary to-primary"></div>
+                <Navigation />
+            </div>
+        </div >
     )
 }
 

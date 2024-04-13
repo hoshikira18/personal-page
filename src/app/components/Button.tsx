@@ -1,6 +1,5 @@
 import Link from "next/link";
 import FadeIn from "./animation/Fadein";
-import "@/app/styles/common/button.css"
 interface ButtonProps {
     children: React.ReactNode,
     href?: string,
@@ -31,7 +30,7 @@ const Button = ({ children, href, newTab, className, onClick }: ButtonProps) => 
             >
 
                 <div className="relative z-40 bg-white p-4 w-full h-full text-center transition-all -translate-x-1 -translate-y-1 group-hover:translate-x-1 group-hover:translate-y-1 text-base font-medium">{children}</div>
-                <div className="btn-back bg-gradient-to-br from-secondary to-primary p-4 z-10"></div>
+                <div className="absolute top-1 left-1 w-full h-full -right-1 bg-gradient-to-br from-secondary to-primary p-4 z-10"></div>
 
             </ComponentType>
         </FadeIn>
