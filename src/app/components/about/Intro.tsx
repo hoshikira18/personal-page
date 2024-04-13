@@ -1,7 +1,6 @@
 import React from 'react'
 import IntroCard from './IntroCard'
-import { describe } from 'node:test'
-
+import FadeIn from '../animation/Fadein'
 const data = [
     {
         id: "1",
@@ -17,7 +16,7 @@ const data = [
 
 const Intro = () => {
     return (
-        <div className='md:px-12 px-5 space-y-5'>
+        <FadeIn className='md:px-12 px-5 space-y-5'>
             {
                 data.map(e => {
                     return (
@@ -27,7 +26,7 @@ const Intro = () => {
                     )
                 })
             }
-        </div>
+        </FadeIn>
     )
 }
 
