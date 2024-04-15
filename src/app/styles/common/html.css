@@ -27,6 +27,10 @@
   @apply list-decimal;
 }
 
+.html a {
+  @apply text-primary underline;
+}
+
 .html pre {
   background: #f4f4f4;
   border: 1px solid #ddd;
