@@ -1,16 +1,12 @@
-import "@/app/styles/animation/fadeout.css"
+import "@/app/styles/animation/fadeout.css";
 
 interface FadeoutProps {
-    children?: React.ReactNode,
-    className?: string
+  children?: React.ReactNode;
+  className?: string;
 }
 
 const Fadeout = ({ children, className }: FadeoutProps) => {
-    return (
-        <div className={`${className} fade-out`}>
-            {children}
-        </div>
-    )
-}
+  return <div className={`${className} fade-out`}>{children}</div>;
+};
 
-export default Fadeout
+export default Fadeout;

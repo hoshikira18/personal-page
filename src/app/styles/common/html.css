@@ -1,0 +1,45 @@
+.html h1 {
+  @apply text-3xl font-bold;
+}
+.html h2 {
+  @apply text-2xl font-bold;
+}
+
+.html p code {
+  background: #f4f4f4;
+  border-left: 3px solid #f36d33;
+  padding: 0 4px;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.html ul,
+.html ol {
+  @apply my-6 ml-8;
+}
+
+.html ul {
+  @apply list-disc;
+}
+
+.html ol {
+  @apply list-decimal;
+}
+
+.html pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
