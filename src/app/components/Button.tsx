@@ -35,7 +35,9 @@ const Button = ({
         <div className="relative z-40 h-full w-full -translate-x-1 -translate-y-1 bg-white p-4 text-center text-base font-medium transition-all group-hover:translate-x-1 group-hover:translate-y-1">
           {children}
         </div>
-        <div className="absolute -right-1 left-1 top-1 z-10 h-full w-full bg-gradient-to-br from-secondary to-primary p-4"></div>
+        <div className="absolute -right-1 left-1 top-1 z-10 h-full w-full bg-gradient-to-br from-secondary to-primary p-4">
+          {children}
+        </div>
       </ComponentType>
     </FadeIn>
   );
