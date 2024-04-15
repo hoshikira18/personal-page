@@ -12,7 +12,7 @@ interface Post {
 
 const ArticleCard = ({ date, excerpt, title, coverImage, slug }: Post) => {
   return (
-    <FadeIn className="group relative h-full flex-col justify-between rounded shadow-lg sm:shrink-0 sm:grow sm:basis-0 ">
+    <div className="group relative h-full flex-col justify-between rounded shadow-lg sm:shrink-0 sm:grow sm:basis-0 ">
       <Link
         href={`/articles/${slug}`}
         className="block h-[200px] overflow-hidden rounded-t"
@@ -36,7 +36,7 @@ const ArticleCard = ({ date, excerpt, title, coverImage, slug }: Post) => {
       <div className="absolute bottom-4 px-6 text-base font-bold text-gray-500">
         {date}
       </div>
-    </FadeIn>
+    </div>
   );
 };
 

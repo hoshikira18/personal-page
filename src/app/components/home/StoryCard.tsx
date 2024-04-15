@@ -12,7 +12,7 @@ const StoryCard = ({ image, isOpen, title, className }: CardProps) => {
         className={`${isOpen ? "opacity-20" : "opacity-40"}  absolute bottom-0 left-0 right-0 top-0 cursor-pointer rounded-sm  bg-black duration-500 ease-out`}
       ></div>
 
-      <div className={`${className} h-[400px] cursor-pointer`}>
+      <div className={`${className} h-[400px] cursor-pointer `}>
         <img
           src={image}
           alt="card"
