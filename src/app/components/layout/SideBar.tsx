@@ -6,9 +6,9 @@ import { Facebook, Insta, LinkedIn, X } from "../icons";
 const SideBar = () => {
   return (
     <div className="z-45 top-0 flex h-full flex-col items-center justify-center from-[#18181b] to-[#222225] pt-10 transition-all duration-700 lg:sticky lg:h-screen lg:min-h-screen lg:w-1/3 lg:bg-gradient-to-r lg:py-20 ">
-      <div className="px-10 lg:px-10 xl:px-20">
+      <div className="rounded-full px-10 lg:px-10 xl:px-20">
         <FadeIn>
-          <div className="mx-auto w-3/5 overflow-hidden border-b-4 border-primary lg:w-full ">
+          <div className="mx-auto w-3/5 overflow-hidden rounded-full border-4  border-primary lg:w-full ">
             <img
               src="/static/home/khuyen-avt-2.webp"
               alt="my-photo"

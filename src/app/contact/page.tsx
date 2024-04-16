@@ -8,7 +8,45 @@ export const metadata: Metadata = {
 };
 
 const Contact = () => {
-  return <div className="h-screen w-full"></div>;
+  return (
+    <div className="">
+      <div className="flex w-full flex-col md:flex-row">
+        <div className="relative h-screen w-full overflow-hidden transition-all duration-700 md:w-1/2">
+          <img
+            src="/static/contact/my-image.webp"
+            alt="my-image"
+            className="fade-out h-full object-cover"
+          />
+          <div className="absolute bottom-0 left-0 right-0 top-0 bg-gradient-to-b from-transparent via-transparent to-black/90"></div>
+          <div className="absolute bottom-20 left-0 right-0 ">
+            <h1 className="px-10 py-10 text-center text-3xl font-bold text-white md:text-5xl">
+              Ready to discuss your project?
+            </h1>
+            <div className="px-20 md:px-10"></div>
+          </div>
+        </div>
+        <div className="flex w-full flex-col space-y-10 py-5 transition-all duration-700 md:py-10 lg:py-20">
+          <div className="space-y-2 px-5 md:px-12">
+            <div className=" text-4xl font-bold text-gray-300 ">
+              Get in touch
+            </div>
+            <div className=" text-4xl font-bold text-gray-300 text-primary ">
+              Let&apos;s talk about your project
+            </div>
+          </div>
+          <div className="px-5 text-lg text-gray-300 md:pl-12 md:pr-20">
+            <p>
+              Thinking about a new project, a problem to solve, or just want to
+              connect? Let&apos;s do it!
+            </p>
+          </div>
+          <div className="space-y-2">
+            <p className="flex"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Contact;

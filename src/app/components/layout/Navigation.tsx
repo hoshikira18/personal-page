@@ -109,7 +109,7 @@ const Navigation = () => {
             </div>
             <Mail
               color={`${pathname === "/contact" ? "#000" : "#ccc"}`}
-              className={`h-12 w-full p-2 md:h-16 md:p-4`}
+              className={`h-12 w-full p-2 text-gray-300 md:h-16 md:p-5`}
             />
             <span
               className={`${pathname == "/contact" ? "text-black" : "text-gray-300"} -translate-y-2 text-sm md:hidden`}

@@ -1,5 +1,5 @@
+"use client";
 import TimelineCard from "./TimelineCard";
-import Pan from "../animation/Pan";
 const education = [
   {
     title: "FPT University",
@@ -36,7 +36,7 @@ const projects = [
 
 const TimelineSection = () => {
   return (
-    <Pan className="flex w-full flex-col p-10 md:flex-row md:space-x-10 lg:p-20">
+    <div className="flex w-full flex-col p-10 md:flex-row md:space-x-10 lg:p-20">
       <div className="grid w-full grid-cols-1 md:w-1/2">
         <TimelineCard data={activities} title="Activities" />
       </div>
@@ -44,7 +44,7 @@ const TimelineSection = () => {
         <TimelineCard data={education} title="Education" />
         {/* <TimelineCard data={activities} title="Activities" /> */}
       </div>
-    </Pan>
+    </div>
   );
 };
 

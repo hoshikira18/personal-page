@@ -1,5 +1,6 @@
 import React from "react";
 import TimelineItem from "./TimelineItem";
+
 interface ItemProps {
   title?: string;
   time?: string;

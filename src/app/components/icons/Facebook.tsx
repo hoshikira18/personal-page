@@ -3,15 +3,17 @@ import React from "react";
 const FaceBook = ({
   color,
   className = "",
+  strokeWidth = "0",
 }: {
   color?: string;
   className?: string;
+  strokeWidth?: string;
 }) => {
   return (
     <svg
       stroke="currentColor"
       fill="currentColor"
-      strokeWidth="0"
+      strokeWidth={strokeWidth}
       viewBox="0 0 512 512"
       className={className}
       height="1em"
