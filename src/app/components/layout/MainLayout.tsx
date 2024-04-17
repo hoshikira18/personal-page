@@ -6,7 +6,7 @@ import "@/app/styles/animation/fadeout.css";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import { usePathname, useRouter } from "next/navigation";
-import BackToTop from "./BackToTop";
+import BackToTop from "./DownButton";
 interface MainLayoutProps {
   children: React.ReactNode;
 }

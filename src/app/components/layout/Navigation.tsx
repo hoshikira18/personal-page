@@ -3,6 +3,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Home, About, Articles, Mail } from "../icons";
 import { Facebook, Insta, LinkedIn, X } from "../icons";
+import Link from "next/link";
 const Navigation = () => {
   const [page, setPage] = useState("home");
 
@@ -12,7 +13,7 @@ const Navigation = () => {
     <div className="fixed bottom-0 z-[200] flex w-full justify-between transition-all duration-300 md:sticky md:top-0 md:h-screen md:min-h-screen md:w-16 md:py-20">
       <div className="flex h-full w-full flex-col justify-between bg-gradient-to-r from-[#18181b] to-[#222225]">
         <div className="sticky left-0 top-8 flex w-screen justify-center bg-[#222225] md:w-auto md:flex-col">
-          <a
+          <Link
             href="/"
             onClick={() => {
               setPage("home");
@@ -37,9 +38,9 @@ const Navigation = () => {
             >
               Home
             </span>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/about"
             onClick={() => {
               setPage("about");
@@ -64,8 +65,8 @@ const Navigation = () => {
             >
               About
             </span>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/articles"
             onClick={() => {
               setPage("articles");
@@ -90,8 +91,8 @@ const Navigation = () => {
             >
               Articles
             </span>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             onClick={() => {
               setPage("contact");
@@ -116,24 +117,24 @@ const Navigation = () => {
             >
               Contact
             </span>
-          </a>
+          </Link>
         </div>
 
         <div className="sticky left-0 top-8 hidden flex-col md:flex ">
-          <a
+          <Link
             href="https://www.facebook.com/hoshikira18"
             target="_blank"
             className=""
           >
             <Facebook className="h-12 w-full p-3 transition-all hover:text-primary dark:text-gray-500" />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://twitter.com/khuyen_van24041"
             target="_blank"
             className=""
           >
             <X className="h-12 w-full p-3 transition-all hover:text-primary dark:text-gray-500" />
-          </a>
+          </Link>
           <a
             href="https://www.instagram.com/hoshikira18/"
             target="_blank"

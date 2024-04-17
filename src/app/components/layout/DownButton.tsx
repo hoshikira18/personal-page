@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 
-const BackToTop = () => {
+const DownButton = () => {
   function scrollToTop() {
     const startPosition = window.pageYOffset;
-    const targetPosition = 0;
+    const targetPosition = window.innerHeight;
     const distance = targetPosition - startPosition;
     const duration = 450; // Adjust the duration as needed
     const easing = function (t: any) {
@@ -34,10 +34,29 @@ const BackToTop = () => {
     return (-c / 2) * (t * (t - 2) - 1) + b;
   }
   return (
-    <button className="fixed bottom-20 text-white" onClick={scrollToTop}>
-      BackToTop
-    </button>
+    <div
+      onClick={scrollToTop}
+      className="mx-auto hidden animate-bounce md:block"
+    >
+      <svg
+        className="h-6 w-6 cursor-pointer text-gray-800 dark:text-white"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m19 9-7 7-7-7"
+        />
+      </svg>
+    </div>
   );
 };
 
-export default BackToTop;
+export default DownButton;

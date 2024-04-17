@@ -5,6 +5,7 @@ import Writer from "../components/home/Writer";
 import Skills from "../components/about/Skills";
 import Intro from "../components/about/Intro";
 import TimelineSection from "../components/about/TimelineSection";
+import DownButton from "../components/layout/DownButton";
 export const metadata: Metadata = {
   title: "Hoshikira | About",
   icons: {
@@ -41,6 +42,7 @@ const About = () => {
           </div>
           <Skills />
           <Intro />
+          <DownButton />
         </div>
       </div>
       <div className="h-[2000px] min-h-screen w-full transition-all  duration-700 ">

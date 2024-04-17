@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Facebook, LinkedIn, Mail, X } from "../components/icons";
+import Pan from "../components/animation/Pan";
 
 export const metadata: Metadata = {
   title: "Hoshikira | Contact",
@@ -9,7 +11,7 @@ export const metadata: Metadata = {
 
 const Contact = () => {
   return (
-    <div className="">
+    <Pan className="">
       <div className="flex w-full flex-col md:flex-row">
         <div className="relative h-screen w-full overflow-hidden transition-all duration-700 md:w-1/2">
           <img
@@ -40,12 +42,55 @@ const Contact = () => {
               connect? Let&apos;s do it!
             </p>
           </div>
-          <div className="space-y-2">
-            <p className="flex"></p>
+          <div className="flex flex-col space-y-3 px-5 text-gray-300 md:px-12">
+            <div className="flex items-center space-x-2">
+              <Mail className="h-8 w-8 text-gray-500" />
+              <p>Email:</p>
+              <a
+                href="mailto:khuyen.dev183@gmail.com"
+                target="_blank"
+                className="block border-b border-primary transition-all hover:border-b-2"
+              >
+                khuyen.dev183@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Facebook className="h-8 w-8 text-gray-500" />
+              <p>Facebook:</p>
+              <a
+                href="https://www.facebook.com/hoshikira18"
+                target="_blank"
+                className="block border-b border-primary transition-all hover:border-b-2"
+              >
+                Trần Văn Khuyến
+              </a>
+            </div>
+            <div className="flex items-center space-x-2">
+              <LinkedIn className="h-8 w-8 text-gray-500" />
+              <p>Linkedin:</p>
+              <a
+                href="https://www.linkedin.com/in/hoshikira/"
+                target="_blank"
+                className="block border-b border-primary transition-all hover:border-b-2"
+              >
+                Trần Văn Khuyến
+              </a>
+            </div>
+            <div className="flex items-center space-x-2">
+              <X className="h-8 w-8 text-gray-500" />
+              <p>Twitter:</p>
+              <a
+                href="https://twitter.com/khuyen_van24041"
+                target="_blank"
+                className="block border-b border-primary transition-all hover:border-b-2"
+              >
+                Trần Văn Khuyến
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Pan>
   );
 };
 
