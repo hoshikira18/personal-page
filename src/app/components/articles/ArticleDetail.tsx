@@ -78,6 +78,7 @@ const ArticleDetail = () => {
         </div>
       </div>
     );
+  document.title = blogDetail?.post.title;
 
   return (
     <div className="w-full space-y-10 px-5 pb-20 pt-40 text-gray-300 lg:px-20">
