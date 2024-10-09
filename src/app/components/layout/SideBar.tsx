@@ -72,7 +72,7 @@ const SideBar = () => {
       </div>
 
       <Button
-        href="https://drive.google.com/file/d/1h6ML35e9I23Rj5-_0XfaD3t_u8jSrVsh/view?usp=sharing"
+        href="https://drive.google.com/file/d/1qyoIVW0doNf08byfm0QyvygCXAYChqLx/view?usp=sharing"
         newTab="1"
         className="px-20 pb-10 pt-10"
       >
