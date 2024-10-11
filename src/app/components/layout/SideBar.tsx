@@ -10,7 +10,7 @@ const SideBar = () => {
         <FadeIn>
           <div className="mx-auto w-3/5 overflow-hidden rounded-full border-4  border-primary lg:w-full ">
             <img
-              src="/static/home/khuyen-avt-2.webp"
+              src="/static/home/avt.webp"
               alt="my-photo"
               className="md:transform-gpu md:transition-all md:duration-700"
             />
