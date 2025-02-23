@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 const cardVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },

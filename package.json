@@ -12,6 +12,7 @@
     "@apollo/client": "^3.9.11",
     "@tabler/icons-react": "^3.2.0",
     "axios": "^1.6.8",
+    "framer-motion": "^12.4.7",
     "grafbase": "^0.67.2",
     "next": "14.1.4",
     "react": "^18",
