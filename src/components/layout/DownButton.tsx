@@ -1,19 +1,26 @@
 "use client";
 import React from "react";
 
-const DownButton = () => {
-  function scrollToTop() {
+interface DownButtonProps {
+  targetRef: React.RefObject<HTMLElement>;
+}
+
+const DownButton: React.FC<DownButtonProps> = ({ targetRef }) => {
+  function scrollToTarget() {
+    if (!targetRef.current) return;
+
+    const elementPosition =
+      targetRef.current.getBoundingClientRect().top + window.scrollY;
+
     const startPosition = window.pageYOffset;
-    const targetPosition = window.innerHeight;
-    const distance = targetPosition - startPosition;
-    const duration = 450; // Adjust the duration as needed
-    const easing = function (t: any) {
-      return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-    }; // Easing function
+    const distance = elementPosition - startPosition;
+    const duration = 150; // Adjust the duration as needed
+    const easing = (t: number) =>
+      t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t; // Easing function
 
-    let startTime: any = null;
+    let startTime: number | null = null;
 
-    function animation(currentTime: any) {
+    function animation(currentTime: number) {
       if (startTime === null) startTime = currentTime;
       const timeElapsed = currentTime - startTime;
       const run = easing(timeElapsed / duration);
@@ -26,16 +33,9 @@ const DownButton = () => {
     requestAnimationFrame(animation);
   }
 
-  // Easing function for smooth animation
-  function easeInOut(t: any, b: any, c: any, d: any) {
-    t /= d / 2;
-    if (t < 1) return (c / 2) * t * t + b;
-    t--;
-    return (-c / 2) * (t * (t - 2) - 1) + b;
-  }
   return (
     <div
-      onClick={scrollToTop}
+      onClick={scrollToTarget}
       className="mx-auto hidden animate-bounce md:block"
     >
       <svg

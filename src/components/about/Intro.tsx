@@ -19,11 +19,11 @@ const data = [
 const Intro = () => {
   return (
     <FadeIn className="space-y-5 px-5 md:px-12">
-      {data.map((e, i) => {
-        return (
-          <IntroCard key={i} id={e.id} title={e.title} content={e.content} />
-        );
-      })}
+      <div className="space-y-5">
+        <p className="text-lg text-gray-300 lg:pr-10">
+          Hey, I’m a developer with a passion for coding 👨‍💻 and a flair for writing ✍️. I thrive on building tech solutions that not only work but also tell a story. Whether it’s shaping clean, user-friendly websites or diving into the logic of a tricky problem, I bring a blend of technical skill and creative curiosity to the table. My goal? To craft products that feel human, functional, and just a little bit special. Let’s create something awesome together!
+        </p>
+      </div>
     </FadeIn>
   );
 };
