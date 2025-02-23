@@ -20,10 +20,10 @@ const TimelineCard = ({ data, title }: Props) => {
           {title}
         </h2>
       </div>
-      {data?.map((e) => {
+      {data?.map((e, i) => {
         return (
           <TimelineItem
-            key={e.title}
+            key={i}
             title={e.title}
             time={e.time}
             des={e.des}

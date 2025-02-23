@@ -2,14 +2,17 @@ import Button from "../Button";
 import Pan from "../animation/Pan";
 import FadeIn from "../animation/Fadein";
 import { Facebook, Insta, LinkedIn, X } from "../icons";
+import Image from "next/image";
 
 const SideBar = () => {
   return (
-    <div className="z-45 top-0 flex h-full flex-col items-center justify-center from-[#18181b] to-[#222225] pt-10 transition-all duration-700 lg:sticky lg:h-screen lg:min-h-screen lg:w-1/3 lg:bg-gradient-to-r lg:py-20 ">
+    <div className="z-45 top-0 flex h-full flex-col items-center justify-center from-[#18181b] to-[#222225] pt-10 transition-all duration-700 lg:sticky lg:h-screen lg:min-h-screen lg:bg-gradient-to-r lg:py-20 ">
       <div className="rounded-full px-10 lg:px-10 xl:px-20">
         <FadeIn>
-          <div className="mx-auto w-3/5 overflow-hidden rounded-full border-4  border-primary lg:w-full ">
-            <img
+          <div className="mx-auto w-40 overflow-hidden rounded-full border-4  border-primary ">
+            <Image
+              width={500}
+              height={500}
               src="/static/home/avt.webp"
               alt="my-photo"
               className="md:transform-gpu md:transition-all md:duration-700"

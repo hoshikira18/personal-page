@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // primary: "#43d04c",
-        // secondary: "#b0f50e",
-        primary: "#5da36f",
-        secondary: "#a5dac0",
+        primary: "#43d04c",
+        secondary: "#b0f50e",
+        // primary: "#5da36f",
+        // secondary: "#a5dac0",
       },
       gridTemplateColumns: {
         "auto-fill-280": "repeat(auto-fill, minmax(280px, 1fr))",

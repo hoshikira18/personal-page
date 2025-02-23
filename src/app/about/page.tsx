@@ -1,11 +1,13 @@
 import "@/app/styles/animation/fadeout.css";
+import Intro from "@/components/about/Intro";
+import Skills from "@/components/about/Skills";
+import TimelineSection from "@/components/about/TimelineSection";
+import Button from "@/components/Button";
+import Writer from "@/components/home/Writer";
+import DownButton from "@/components/layout/DownButton";
 import type { Metadata } from "next";
-import Button from "../components/Button";
-import Writer from "../components/home/Writer";
-import Skills from "../components/about/Skills";
-import Intro from "../components/about/Intro";
-import TimelineSection from "../components/about/TimelineSection";
-import DownButton from "../components/layout/DownButton";
+import Image from "next/image";
+
 export const metadata: Metadata = {
   title: "Hoshikira | About",
   icons: {
@@ -18,7 +20,9 @@ const About = () => {
     <div className="">
       <div className="flex w-full flex-col md:flex-row">
         <div className="relative h-screen w-full overflow-hidden transition-all duration-700 md:w-1/2">
-          <img
+          <Image
+            width={500}
+            height={500}
             src="/static/about/my-image.webp"
             alt="my-image"
             className="fade-out h-full object-cover"

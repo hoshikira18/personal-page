@@ -42,7 +42,6 @@ const TimelineSection = () => {
       </div>
       <div className="grid w-full grid-cols-1 md:w-1/2">
         <TimelineCard data={education} title="Education" />
-        {/* <TimelineCard data={activities} title="Activities" /> */}
       </div>
     </div>
   );

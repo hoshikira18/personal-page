@@ -10,20 +10,15 @@
   },
   "dependencies": {
     "@apollo/client": "^3.9.11",
-    "@mantine/core": "^7.7.1",
-    "@mantine/notifications": "^7.7.1",
-    "@react-three/fiber": "^8.16.1",
     "@tabler/icons-react": "^3.2.0",
-    "@tanstack/react-query": "^5.29.2",
     "axios": "^1.6.8",
-    "framer-motion": "^11.0.28",
     "grafbase": "^0.67.2",
     "next": "14.1.4",
     "react": "^18",
     "react-code-block": "^1.0.0",
     "react-dom": "^18",
     "react-query": "^3.39.3",
-    "swr": "^2.2.5",
+    "sharp": "^0.33.5",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {

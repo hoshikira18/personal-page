@@ -26,9 +26,9 @@ const TimelineItem = ({ title, time, des }: Props) => {
         <span className="min-w-1/3 rounded-md bg-secondary px-2 py-1 text-center text-sm font-medium text-black">
           {time}
         </span>
-        {des?.split("-").map((e) => {
+        {des?.split("-").map((e, i) => {
           return (
-            <div className="flex w-full items-start space-x-2 pt-2" key={e}>
+            <div className="flex w-full items-start space-x-2 pt-2" key={i}>
               <span className="my-1.5 h-3 w-3 min-w-3 rounded-full bg-primary "></span>
               <p className="text-base font-medium text-gray-300">{e}</p>
             </div>

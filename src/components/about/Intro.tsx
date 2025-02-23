@@ -19,11 +19,9 @@ const data = [
 const Intro = () => {
   return (
     <FadeIn className="space-y-5 px-5 md:px-12">
-      {data.map((e) => {
+      {data.map((e, i) => {
         return (
-          <>
-            <IntroCard id={e.id} title={e.title} content={e.content} />
-          </>
+          <IntroCard key={i} id={e.id} title={e.title} content={e.content} />
         );
       })}
     </FadeIn>

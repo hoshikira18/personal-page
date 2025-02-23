@@ -1,6 +1,8 @@
+import Pan from "@/components/animation/Pan";
+import { Facebook, LinkedIn, Mail, X } from "@/components/icons";
 import type { Metadata } from "next";
-import { Facebook, LinkedIn, Mail, X } from "../components/icons";
-import Pan from "../components/animation/Pan";
+import Image from "next/image";
+
 
 export const metadata: Metadata = {
   title: "Hoshikira | Contact",
@@ -14,7 +16,9 @@ const Contact = () => {
     <Pan className="">
       <div className="flex w-full flex-col md:flex-row">
         <div className="relative h-screen w-full overflow-hidden transition-all duration-700 md:w-1/2">
-          <img
+          <Image
+            width={500}
+            height={500}
             src="/static/contact/my-image.webp"
             alt="my-image"
             className="fade-out h-full object-cover"
@@ -32,7 +36,7 @@ const Contact = () => {
             <div className=" text-4xl font-bold text-gray-300 ">
               Get in touch
             </div>
-            <div className=" text-4xl font-bold text-gray-300 text-primary ">
+            <div className=" text-4xl font-bold text-primary ">
               Let&apos;s talk about your project
             </div>
           </div>
