@@ -1,18 +1,12 @@
 "use client";
 import Navigation from "./Navigation";
 import "@/app/globals.css";
-import { useEffect, useState } from "react";
 import "@/app/styles/animation/fadeout.css";
-import { motion, useMotionValue, useSpring } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
-import { usePathname, useRouter } from "next/navigation";
-import BackToTop from "./DownButton";
 interface MainLayoutProps {
   children: React.ReactNode;
 }
 
 const MainLayout = ({ children }: MainLayoutProps) => {
-  const path = usePathname();
   return (
     <div className="relative flex min-h-screen w-full justify-center bg-black md:px-0 lg:px-8 ">
       <div className="fixed left-0 top-0 z-[500] hidden h-8 w-full bg-black lg:block"></div>

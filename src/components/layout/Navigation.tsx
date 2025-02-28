@@ -1,12 +1,9 @@
-"use client";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { Home, About, Articles, Mail } from "../icons";
 import { Facebook, Insta, LinkedIn, X } from "../icons";
 import Link from "next/link";
-const Navigation = () => {
-  const [page, setPage] = useState("home");
 
+const Navigation = () => {
   const pathname = usePathname();
 
   return (
@@ -15,9 +12,6 @@ const Navigation = () => {
         <div className="sticky left-0 top-8 flex w-screen justify-center bg-[#222225] md:w-auto md:flex-col">
           <Link
             href="/"
-            onClick={() => {
-              setPage("home");
-            }}
             className={`${pathname == "/" ? "bg-gradient-to-tr from-primary to-secondary" : "hover:bg-green-900"} group flex w-1/4 flex-col items-center overflow-hidden transition-all md:w-auto`}
           >
             <div
@@ -42,9 +36,6 @@ const Navigation = () => {
 
           <Link
             href="/about"
-            onClick={() => {
-              setPage("about");
-            }}
             className={`${pathname == "/about" ? "bg-gradient-to-tr from-primary to-secondary" : "hover:bg-green-900"} group flex w-1/4 flex-col items-center overflow-hidden transition-all md:w-auto`}
           >
             <div
@@ -68,9 +59,6 @@ const Navigation = () => {
           </Link>
           <Link
             href="/articles"
-            onClick={() => {
-              setPage("articles");
-            }}
             className={`${pathname == "/articles" ? "bg-gradient-to-tr from-primary to-secondary" : "hover:bg-green-900"} group flex w-1/4 flex-col items-center overflow-hidden transition-all md:w-auto`}
           >
             <div
@@ -94,9 +82,6 @@ const Navigation = () => {
           </Link>
           <Link
             href="/contact"
-            onClick={() => {
-              setPage("contact");
-            }}
             className={`${pathname == "/contact" ? "bg-gradient-to-tr from-primary to-secondary" : "hover:bg-green-900"} group flex w-1/4 flex-col items-center overflow-hidden transition-all md:w-auto`}
           >
             <div

@@ -1,10 +1,9 @@
 
-import FadeIn from "@/components/animation/Fadein";
+import type { Metadata } from "next";
 import Pan from "@/components/animation/Pan";
 import Button from "@/components/Button";
+import AvtImage from "@/components/home/AvtImage";
 import { Facebook, X, Insta, LinkedIn } from "@/components/icons";
-import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Hoshikira | Frontend Developer",
@@ -17,17 +16,7 @@ const Home = () => {
   return (
     <div className="z-45 top-0 flex h-full w-full flex-col items-center justify-center from-[#18181b] to-[#222225] pt-10 transition-all duration-700 lg:sticky lg:h-screen lg:min-h-screen lg:bg-gradient-to-r lg:py-20 ">
       <div className="rounded-full px-10 lg:px-10 xl:px-20">
-        <FadeIn>
-          <div className="mx-auto w-40 overflow-hidden rounded-full border-4  border-primary ">
-            <Image
-              width={500}
-              height={500}
-              src="/static/home/avt.jpg"
-              alt="my-photo"
-              className="md:transform-gpu md:transition-all md:duration-700"
-            />
-          </div>
-        </FadeIn>
+        <AvtImage />
 
         <Pan>
           <h1 className="mx-auto py-3 text-center text-4xl font-medium text-secondary">
@@ -80,7 +69,7 @@ const Home = () => {
             </p>
           </div>
         </Pan>
-      </div>
+      </div >
 
       <div className="grid grid-cols-2 gap-10">
         <Button
@@ -121,7 +110,7 @@ const Home = () => {
           </g>
         </svg>
       </div>
-    </div>
+    </div >
   );
 };
 
