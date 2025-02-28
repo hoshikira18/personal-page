@@ -6,7 +6,6 @@ import TimelineSection from "@/components/about/TimelineSection";
 import Button from "@/components/Button";
 import Writer from "@/components/home/Writer";
 import DownButton from "@/components/layout/DownButton";
-import type { Metadata } from "next";
 import Image from "next/image";
 import { useRef } from "react";
 
@@ -95,14 +94,15 @@ const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   return (
     <div className="">
+
       <div className="flex w-full flex-col lg:flex-row">
-        <div className="relative w-full lg:w-1/2 overflow-hidden transition-all duration-700">
+        <div className={`relative w-full lg:w-1/2 overflow-hidden transition-all duration-700 bg-[url(/static/about/my-image-small.webp)] bg-no-repeat bg-cover`}>
           <Image
             width={500}
             height={500}
             src="/static/about/my-image.webp"
             alt="my-image"
-            className="fade-out h-full w-full object-cover"
+            className="h-full w-full object-cover"
           />
           <div className="absolute bottom-0 left-0 right-0 top-0 bg-gradient-to-b from-transparent via-transparent to-black/90"></div>
           <div className="absolute bottom-20 left-0 right-0 ">
@@ -114,6 +114,7 @@ const About = () => {
             </div>
           </div>
         </div>
+
         <div className="flex w-full flex-col space-y-10 py-5 transition-all duration-700 md:py-10 lg:py-20">
           <div className="px-5 md:px-12">
             <div className="py-3 text-4xl font-bold text-gray-300 ">
@@ -131,6 +132,7 @@ const About = () => {
         <div className="h-1 w-full bg-gradient-to-r from-secondary to-primary"></div>
         <TimelineSection />
       </div>
+
     </div>
   );
 };

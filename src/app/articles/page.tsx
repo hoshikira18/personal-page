@@ -14,7 +14,7 @@ export const revalidate = 60
 const Article = () => {
   return (
     <div className=" min-h-screen w-full bg-gradient-to-tr from-[#151515] to-[#28282c] text-5xl text-gray-300">
-      <div className="h-[400px] w-full overflow-hidden">
+      <div className="h-[400px] w-full overflow-hidden bg-[url(/static/articles/cover-image-small.webp)] bg-no-repeat bg-cover">
         <Image
           width={500}
           height={500}

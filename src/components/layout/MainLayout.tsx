@@ -2,6 +2,7 @@
 import Navigation from "./Navigation";
 import "@/app/globals.css";
 import "@/app/styles/animation/fadeout.css";
+
 interface MainLayoutProps {
   children: React.ReactNode;
 }
