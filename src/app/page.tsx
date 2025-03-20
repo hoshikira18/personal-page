@@ -73,7 +73,7 @@ const Home = () => {
 
       <div className="grid grid-cols-2 gap-10">
         <Button
-          href="https://drive.google.com/file/d/1h6ML35e9I23Rj5-_0XfaD3t_u8jSrVsh/view?usp=sharing"
+          href="/static/CV_TRANVANKHUYEN.pdf"
           newTab="1"
           className="pb-10 pt-10"
         >
