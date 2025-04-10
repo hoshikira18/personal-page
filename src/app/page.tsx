@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const Home = () => {
   return (
     <div className="z-45 top-0 flex h-full w-full flex-col items-center justify-center from-[#18181b] to-[#222225] pt-10 transition-all duration-700 lg:sticky lg:h-screen lg:min-h-screen lg:bg-gradient-to-r lg:py-20 ">
-      <div className="rounded-full px-10 lg:px-10 xl:px-20">
+      {/* <div className="rounded-full px-10 lg:px-10 xl:px-20">
         <AvtImage />
 
         <Pan>
@@ -69,8 +69,10 @@ const Home = () => {
             </p>
           </div>
         </Pan>
-      </div >
-
+      </div > */}
+<div className="w-full px-5 md:px-20 lg:px-40">
+      <iframe style={ { borderRadius:"12px"}} src="https://open.spotify.com/embed/playlist/08Iatn2s0qCdXwr4q9aBDa?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
       <div className="grid grid-cols-2 gap-10">
         <Button
           href="/static/CV_TRANVANKHUYEN.pdf"
